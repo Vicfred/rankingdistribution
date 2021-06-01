@@ -16,9 +16,13 @@ sizes = [147-1+1, 379-148+1, 1340-382+1, 3295-1352+1, 7221-3301+1, 14671-7254+1,
 
 patches, texts = plt.pie(sizes, colors=colors, wedgeprops = { 'linewidth' : 1, 'edgecolor' : 'white' })
 total = sum(sizes)
+cumulative = sizes.copy()
+for i in range(1,len(sizes)):
+    cumulative[i] += cumulative[i - 1]
 labels = [f'{l}, {s/total*100:0.2f}%' for l, s in zip(labels, sizes)]
+labels = [f'{s/total*100:0.2f}% {c/total*100:0.2f}%' for s, c in zip(sizes, cumulative)]
 plt.legend(bbox_to_anchor=(0.95, 1), loc='upper left', labels=labels)
 plt.axis('equal')
 plt.tight_layout()
 
-plt.savefig("mygraph.png")
+plt.savefig('atcoderpie.png')
