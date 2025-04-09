@@ -2,12 +2,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Pie chart, where the slices will be ordered and plotted counter-clockwise:
+# Color changes pages: 2,5,17,43,94,189,341
 labels = 'red', 'orange', 'yellow', 'blue', 'cyan', 'green', 'brown', 'gray'
 colors = ('#ff0000', '#ffb331', '#fef53a', '#2667f2', '#3afeee', '#00c911', '#5e4838', '#afafaf')
 sizes = [147-1+1, 379-148+1, 1340-382+1, 3295-1352+1, 7221-3301+1, 14671-7254+1, 25565-14702+1, 79577-25598+1]
 labels = 'red', 'orange', 'yellow', 'blue', 'cyan', 'green', 'brown'
 colors = ('#ff0000', '#ffb331', '#fef53a', '#2667f2', '#3afeee', '#00c911', '#5e4838')
-sizes = [147-1+1, 379-148+1, 1340-382+1, 3295-1352+1, 7221-3301+1, 14671-7254+1, 25565-14702+1]
+# May 31, 2021
+# sizes = [147-1+1, 379-148+1, 1340-382+1, 3295-1352+1, 7221-3301+1, 14671-7254+1, 25565-14702+1]
+# April 09, 2025
+sizes = [111-1+1, 404-111+1, 1647-404+1, 4275-1647+1, 9296-4275+1, 18844-9296+1, 34020-18844+1]
 # labels = 'red', 'orange', 'yellow', 'blue', 'cyan', 'green'
 # colors = ('#ff0000', '#ffb331', '#fef53a', '#2667f2', '#3afeee', '#00c911')
 # sizes = [147-1+1, 379-148+1, 1340-382+1, 3295-1352+1, 7221-3301+1, 14671-7254+1]
