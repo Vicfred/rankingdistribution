@@ -21,6 +21,7 @@ for i in range(1,len(sizes)):
     cumulative[i] += cumulative[i - 1]
 labels = [f'{l}, {s/total*100:0.2f}%' for l, s in zip(labels, sizes)]
 labels = [f'{s/total*100:0.2f}% {c/total*100:0.2f}%' for s, c in zip(sizes, cumulative)]
+print(sizes, cumulative)
 plt.legend(bbox_to_anchor=(0.95, 1), loc='upper left', labels=labels)
 plt.title('Atcoder ranking distribution', bbox={'facecolor':'0.8', 'pad':5})
 plt.axis('equal')
